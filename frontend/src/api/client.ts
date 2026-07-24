@@ -1,6 +1,8 @@
 import { useAuthStore } from "../store";
 
-const BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+// In Replit the browser can't reach localhost:8000 directly.
+// All requests go through Vite's /api proxy → http://localhost:8000.
+const BASE_URL = "/api";
 
 export const customFetch = async <T>(
   url: string,
