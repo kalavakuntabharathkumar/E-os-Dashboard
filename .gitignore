@@ -1,0 +1,10 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+*.egg-info/
+.env
+*.db
+*.sqlite
+.DS_Store
+.vite/

@@ -1,0 +1,9 @@
+{
+  "name": "e-os-dashboard",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:backend": "cd backend && uvicorn main:app --reload --port 8000",
+    "generate": "pnpm --filter frontend generate"
+  }
+}
